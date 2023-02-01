@@ -9,7 +9,9 @@ app.use(express.json())
 
 
 // Available Routes
-app.post("/api/auth/createuser", require('./routes/auth.js'))
+app.use("/api/auth", require('./routes/auth.js'))
+
+// app.post("/api/auth/login",require('./routes/auth.js') )
 // app.get("/api/notes", require('./routes/notes.js'))
 
 
