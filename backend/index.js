@@ -9,7 +9,7 @@ app.use(express.json())
 
 
 // Available Routes
-app.get("/api/auth", require('./routes/auth.js'))
+app.post("/api/auth", require('./routes/auth.js'))
 // app.get("/api/notes", require('./routes/notes.js'))
 
 
