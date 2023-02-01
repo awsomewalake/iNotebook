@@ -2,14 +2,14 @@ const connect_to_mongo = require('./db')
 connect_to_mongo();
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 5000
 //Middleware
 app.use(express.json())
 
 
 
 // Available Routes
-app.post("/api/auth", require('./routes/auth.js'))
+app.post("/api/auth/createuser", require('./routes/auth.js'))
 // app.get("/api/notes", require('./routes/notes.js'))
 
 
